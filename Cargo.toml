@@ -1,0 +1,19 @@
+[package]
+name = "db-course"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = ["common", "cask", "tiered", "pager", "tx", "repl"]
+resolver = 2
+
+[workspace.dependencies]
+anyhow = "1.0.104"
+bytes = "1.12.1"
+crc32fast = "1.5.4"
+criterion = "0.8.2"
+crossbeam-skiplist = "0.1.3"
+loom = "0.7.2"
+parking_lot = "0.13.0"
+proptest = "1.12.0"
+tempfile = "3.27.0"
